@@ -36,9 +36,7 @@ app.use(morgan('combined', { stream: { write: msg => logger.info(msg.trim()) } }
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Documentation API (uniquement en développement)
-if (process.env.NODE_ENV === 'development') {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-}
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));

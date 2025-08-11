@@ -57,10 +57,10 @@ const livreSchema = Joi.object({
  *           type: integer
  *         description: Nombre d'éléments par page (défaut 10)
  *       - in: query
- *         name: tri
+ *         name: sort
  *         schema:
  *           type: string
- *         description: Champ de tri, ex: createdAt, -titre
+ *         description: "Champ de tri, ex: createdAt, -titre"
  *       - in: query
  *         name: titre
  *         schema:

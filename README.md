@@ -22,6 +22,28 @@ Cette API permet de gérer une collection de livres avec un système complet d�
 - [Licence](#licence)  
 
 ---
+## Documentation API (Swagger)
+
+La documentation interactive de l’API est disponible via Swagger UI.
+
+Pour y accéder en local, lance le serveur puis ouvre dans ton navigateur :
+
+```bash
+  http://localhost:<PORT>/api-docs
+```
+où <PORT> est le port sur lequel tourne ton serveur (par défaut 3000 ou 5000).
+
+Cette interface te permet de :
+
+Explorer toutes les routes disponibles
+
+Voir les schémas des données
+
+Tester les endpoints directement depuis le navigateur
+
+Assure-toi que le middleware Swagger est bien intégré dans ton application Express, avec l’URL /api-docs configurée.
+
+
 
 ## Installation
 
